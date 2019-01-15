@@ -1,0 +1,1411 @@
+body,
+html {
+    height: 100%;
+    width:auto;
+    margin: 0;
+    font: 400 15px/1.8 "Lato", sans-serif;
+/*    background-color: rgb(72, 62, 62); remove to revert to old bg color along with .paralax-bg 1 2 3 4 opacity:    opacity: 0.59;*/
+    background-color: #000000;
+}
+
+
+                                                        /* SCROLL ARROW */  
+
+
+
+.scroll-link {
+	position: absolute;
+	left: 50%;
+	bottom: 10px;
+	display: block;
+	text-align: center;
+	font-size: 20px;
+	text-decoration: none;
+	text-shadow: 0;
+  width: 40px;
+  height: 40px;
+  border-bottom: 6px solid rgb(23,162,184);
+  border-right: 6px solid rgb(23,162,184);
+  z-index: 9;
+  left: 48.5%;
+  -webkit-transform: translate(-50%, 0%) rotate(45deg);
+  -moz-transform: translate(-50%, 0%) rotate(45deg);
+  transform: translate(-50%, 0%) rotate(45deg);
+	-webkit-animation: fade_move_down 2s ease-in-out infinite;
+	-moz-animation:    fade_move_down 2s ease-in-out infinite;
+	animation:         fade_move_down 2s ease-in-out infinite;
+}
+
+
+/*animated scroll arrow animation*/
+@-webkit-keyframes fade_move_down {
+  0%   { -webkit-transform:translate(0,-10px) rotate(45deg); opacity: 0;  }
+  50%  { opacity: 1;  }
+  100% { -webkit-transform:translate(0,10px) rotate(45deg); opacity: 0; }
+}
+@-moz-keyframes fade_move_down {
+  0%   { -moz-transform:translate(0,-10px) rotate(45deg); opacity: 0;  }
+  50%  { opacity: 1;  }
+  100% { -moz-transform:translate(0,10px) rotate(45deg); opacity: 0; }
+}
+@keyframes fade_move_down {
+  0%   { transform:translate(0,-10px) rotate(45deg); opacity: 0;  }
+  50%  { opacity: 1;  }
+  100% { transform:translate(0,10px) rotate(45deg); opacity: 0; }
+}
+
+
+
+
+
+
+                                                        /*NAV BAR*/
+
+/* MAKING IT STICKY */
+nav{
+z-index: 4;
+height: 60px;
+}
+
+.nav-pills > li > a.active {
+    background-color: rgb(23,162,184)!important;
+}
+
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 54px;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .about {
+  padding-top: 77px; 
+}
+
+
+.color-change{
+    background-color: #222 !important;
+    transition: all 0.25s ease-in;
+}
+
+
+
+@media (min-width:768px) {
+/*    NEED TO TEST THIS TO SEE WHAT WORKS*/
+}
+    
+        
+@media (max-width:1200px) {
+    /*    NEED TO TEST THIS TO SEE WHAT WORKS*/
+}        
+/* ^MAKING IT STICK^*/
+
+.custom-center{
+    margin: auto;
+}
+
+.nav-item{
+margin-left: 20px;
+margin-right: 20px;
+/*    NEED A BETTER WAY TO DO THIS RESPONSIVE*/
+}
+
+@media (max-width: 500px) {
+    .nav-item{
+
+margin-left: 0px;
+margin-right: 0px;
+font-size: 15px;
+}
+
+/*
+ONLY WORKS FOR S5 PHONE BUT BREAKS THE DESKTOP STICKY NAV
+nav{
+z-index: 4;
+height: 60px;
+}
+
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .about {
+  padding-top: 77px; 
+}  
+*/
+}
+
+                                                        /* ANIMATION RESPONSIVENESS*/
+/*this is so that the white margin on the right added by the animation is hidden*/
+.about{
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.contact-container{
+    background-color:  #0e161d;
+    overflow-x: hidden;
+    overflow-y: hidden; 
+}
+
+/* ^NAV BAR*^*/
+
+                                                        /*IMAGES*/
+.parallax-bg-1,
+.parallax-bg-2,
+.parallax-bg-3,
+.parallax-bg-4{
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.9;
+
+}
+
+.parallax-bg-1 {
+    background-image: url("https://image.ibb.co/fMO2ML/work-station-straight-on-view-WEB.jpg");
+    min-height: 100%;
+}
+
+/*Photo by Alejandro Escamilla on Unsplash https://unsplash.com/photos/xII7efH1G6o*/
+/*https://image.ibb.co/ih8VR9/1.jpg*/
+
+.parallax-bg-2 {
+    background-image: url("https://image.ibb.co/mmwGWL/work-station-x-ray-WEB3.jpg");
+    min-height: 47%;
+}
+/*https://image.ibb.co/mFnn69/Code.jpg*/
+
+.parallax-bg-3 {
+    background-image: url("https://i.ibb.co/3YmvjP1/projects-web.jpg");
+    min-height: 37%;
+/*         https://image.ibb.co/dTr080/Projects-WEB.jpg*/
+}
+
+.parallax-bg-4 {
+    background-image: url("https://image.ibb.co/bLFQd0/Contact-Elon.jpg");
+    min-height: 37%;
+}
+/*https://image.ibb.co/dL0qR9/IOT.jpg*/
+
+                                                        /*NAME & TITLE*/
+
+.name-container {
+    position: fixed;
+    left: 0;
+    top: 15%;
+    width: 90%;
+    text-align: center;
+    color: #000;
+    left: 3%;
+    /* to align it in the center*/
+    padding: 18px;
+    font-size: 50px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    /* DELETE THIS AND USE SHADWO DROP FROM CAT APP */
+}
+
+.name {
+    color: #ffffff;
+    letter-spacing: 15px;
+    padding-left: 4%;
+}
+
+ #name > .title {
+    color: #ffffff;
+     font-size: 70%;
+    letter-spacing: 5px;
+    padding-left: 4%;
+}
+
+@media(max-width: 540px) {
+    
+    .name-container {
+        position: fixed;
+        left: 0;
+        top: 15%;
+        width: 90%;
+        text-align: center;
+        color: #000;
+        left: 3%;
+        /* to align it in the center*/
+        padding: 1px;
+        font-size: 50px;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+        /* DELETE THIS AND USE SHADWO DROP FROM CAT APP */
+    }
+
+    .name {
+        color: #ffffff;
+        letter-spacing: 15px;
+        padding-left: 1%;
+    }
+
+     #name > .title {
+        color: #ffffff;
+         font-size: 55%;
+        letter-spacing: 2px;
+        padding-left: 4%;
+    }
+
+
+}
+
+
+
+                                    /*ANIMATION & KEYFRAMES FOR NAME*/
+
+
+.disappear {
+    animation: removed-item-animation .05s cubic-bezier(.55,-0.04,.91,.94) forwards;
+}
+
+@keyframes removed-item-animation {
+    from {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    to {
+        opacity: 0;
+        transform: scale(0);
+    }
+}
+
+/* TYPING ANIMATION  https://codepen.io/hi-im-si/pen/DHoup*/
+
+/*
+.appear {
+    animation: 
+        openspace 2s ease forwards, 
+        restored-item-animation 2s 2s cubic-bezier(0,.8,.32,1.07) forwards;
+}
+
+@keyframes openspace {
+    to {
+        height: auto;
+    }
+}
+
+@keyframes restored-item-animation {
+    from {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+*/
+
+
+                                                        /*CAPTIONS*/
+.caption {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    
+}
+
+.caption span.border {
+    background-color: #282E34;  
+/*    it looks pretty good without a background but makes it difficult to see*/
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+}
+
+.pic-text {
+    background-color: transparent;
+    font-size: 25px;
+    color: rgb(255, 255, 255) !important;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+
+                                                        /*ABOUT*/
+
+h3 {
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    font: 25px "Lato", sans-serif;
+    color: #ffffff;
+}
+
+.about-panel {
+    color: #777;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 30px 80px;
+    text-align: justify;
+}
+
+.about-caption {
+    color: black;
+    text-align: center;
+}
+
+.grid-about {
+    display: grid;
+    /*  grid-template-columns: 1fr 3fr;*/
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-column-gap: 5px;
+    justify-content: center;
+}
+
+/*
+.front-face {
+    max-width: 60%;
+    height: auto;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: middle;
+
+    margin-top: center;
+}
+*/
+
+.about-txt {
+    grid-column: span 2;
+    padding-top: 3%;
+    /*    to make the text take up more space*/
+}
+
+                                                /* CARD FLIP FUNCTIONALITY*/
+
+
+.cardtainer {
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+    height: 300px;
+    width: 330px;
+    position: relative;
+
+}
+
+.cardtainer:hover .card-front {
+    transform: rotateY(-180deg);
+}
+
+.cardtainer:hover .card-back {
+    transform: rotateY(0);
+}
+
+.card-side { 
+    height: 300px; 
+    width: 300px;
+/*    ^this should match  .card height:*/
+
+    border-radius: 50%;
+    color: white;
+    
+    transition: all .8s ease; 
+    top: 0;
+    backface-visibility: hidden;
+    position: absolute;
+    left: 25px;
+/*    To center an absolutely positioned element... |(x-y)/2 = left: px value| x= parent element width y=child element width and your value will have to be plugged into the child element as left:(answer)px */ 
+    
+
+}
+
+.card-front {
+background-image: url("https://i.ibb.co/YytYPZz/Suit-Profile-pic.jpg");
+background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    
+}
+
+.card-back {
+   background-image: url("https://i.ibb.co/fYD13DH/web-ninja.jpg");
+background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    transform:rotateY(180deg);
+}
+/*image from http://clipart-library.com/michelangelo-cliparts.html*/
+
+/*this breakpoint needs fine tuning*/
+@media(max-width:1240px) {
+    
+    .cardtainer {
+    height: 300px;
+    width: 300px;
+  
+    grid-column: span 1;
+    margin: 0 auto;
+
+}
+
+.card-side { 
+    height: 300px; 
+    width: 300px;
+/*    ^this should match  .card height:*/
+    transition: all .8s ease; 
+    top: 0;
+    backface-visibility: hidden;
+    position: absolute;
+    left: 0px;
+    
+}
+
+
+.about-txt {
+    grid-column: span 1;
+    padding-top: 3%;
+}
+
+}
+
+
+                                                        /*SKILL*/
+
+
+.skill-panel{
+    color: #ddd;
+    background-color: #282E34;
+    text-align: center;
+    padding: 0px 80px 30px 80px;
+    text-align: justify;
+}
+
+
+.grid-skill {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    /*  grid-template-columns: repeat(3, 1fr);*/
+    grid-column-gap: 20px;
+    justify-content: center;
+}
+
+.skill-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nested {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));
+    grid-column-gap: 5px;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+
+.lang-container {
+    grid-column: span 3;
+    padding-top: 3%;
+}
+
+
+
+
+.wrapper-html{
+   display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+}
+
+.skill-container{
+    padding-top: 20px;
+}
+
+                                                        /* SKILL CIRCLE ANIMATION*/
+/* ============= for the animated progress bar.js/Circle =============   
+ YOU HAVE TO NPM INSTALL IT WHEN DEPLOYING FOR IT TO WORK  
+https://kimmobrunfeldt.github.io/progressbar.js/*/
+
+
+.wrapper-html {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+
+    
+}
+
+.wrapper-html > .bar-html,
+.wrapper-html > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper-html > img {
+    /* Needs appropriate vendor prefixes */
+    box-sizing: border-box;
+
+    /* This needs to be equal to strokeWidth */
+    padding: 2%;
+}
+
+.wrapper-html > img {
+    border-radius: 50%;
+}
+
+
+
+/*FOR CSS*/
+
+
+
+.wrapper-css {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+
+}
+
+.wrapper-css > .bar-css,
+.wrapper-css > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper-css > img {
+    /* Needs appropriate vendor prefixes */
+    box-sizing: border-box;
+
+    /* This needs to be equal to strokeWidth */
+    padding: 2%;
+}
+
+.wrapper-css > img {
+    border-radius: 50%;
+}
+
+
+
+/*FOR JS*/
+
+
+
+.wrapper-js {
+    position: relative;
+    width: 100px;
+    height: 100px;
+     margin: auto;
+
+}
+
+.wrapper-js > .bar-js,
+.wrapper-js > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    
+}
+
+.wrapper-js > img {
+    /* Needs appropriate vendor prefixes */
+    box-sizing: border-box;
+
+    /* This needs to be equal to strokeWidth */
+    padding: 2%;
+}
+
+.wrapper-js > img {
+    border-radius: 50%;
+}
+
+
+                                            /* ^============= for the animated progress bar/Circle =============^*/
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.wrapper > img {
+    box-sizing: border-box;
+    padding: 4%;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    
+}
+
+
+.cert {
+  display: flex;            
+  align-items: center;      
+  justify-content: center;
+  padding: 4%;
+}
+
+/*^Use this method^ https://stackoverflow.com/questions/45536537/centering-in-css-grid to center the certificate. It can be used for the rest of the grid items.*/
+
+
+
+
+.cert-img{
+   width: 400px;
+   height: 250px;
+    
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.56); 
+    transition: transform .3s;
+}
+
+.cert-img:hover {
+        transform: translateY(-10px) scale(1.05);
+    }
+
+
+@media screen and (max-width: 900px){
+.lang-container {
+    grid-column: span 1;
+    padding-top: 3%;
+}
+.nested {
+    display: grid;
+    grid-template-rows: (1fr, 1fr);
+    grid-column-gap: 5px;
+    justify-content: center; 
+}
+    
+}
+
+@media screen and (max-width: 1190px){
+    .cert-img{
+   width: 300px;
+   height: auto;
+    
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.56); 
+    transition: transform .3s;
+    }
+}
+
+
+
+                                                    /*HOVER EFFECT*/
+
+    .caption-skill{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 20%);
+        color: white;
+        text-transform: uppercase;
+        font-size: 18px;
+        text-align: center;
+        opacity: 0;
+        transition: all .5s;
+        backface-visibility: hidden;  
+    }
+
+.caption-skill > p {
+   
+    margin-bottom: 0px;
+}
+
+.level {
+    font-size: 11px;
+}
+    
+    .cap-text:hover .caption-skill {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+    
+    .cap-text:hover img {
+        transform:  scale(1);
+        filter: blur(3px) brightness(20%);
+    } 
+
+
+                                                        /*PROJ*/
+
+
+.proj-panel {
+    color: #ddd;
+    background-color: #282E34;
+    text-align: center;
+    padding: 50px 30px;
+    text-align: justify;
+}
+
+.proj-title {
+    padding-left: 40px;
+    padding-bottom: 10px;;
+}
+
+.grid-proj {
+    display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-column-gap: 30px;
+    justify-content: center;
+}
+
+
+.wrapper-proj {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper-proj > img {
+    box-sizing: border-box;
+    padding: 4%;
+    position: relative;
+    width: 220px;
+    height: 300px;
+    
+}
+
+.patience-proj {
+    padding-top: 10px;
+    text-align: center;
+}
+
+.other-work {
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+                                                        /*SLIDE ANIMATION FOR PROJECTS*/
+
+
+.grid-item {
+    overflow: hidden;
+    position: relative;
+}
+
+.grid-item > a {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.overlay-top:after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -1px;
+    left: 45%;
+    width: 10%;
+    text-align: center;
+    z-index: 5;
+    border-bottom: 3px solid #fff;
+}
+
+.grid-item img {
+    width: 80%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.overlay-top,
+.overlay-bot {
+    position: absolute;
+    background-color: #000;
+    text-align: center;
+    width: 80%;
+    height: 50%;
+    overflow: hidden;
+    color: #fff;
+    opacity: 0.9;
+}
+
+.overlay-top {
+    top: -50%;
+}
+
+.overlay-bot {
+    bottom: -50%;
+    padding-top: 10%;
+}
+
+.grid-item h2 {
+    padding-bottom: 100px;
+}
+
+.grid-item p {
+    padding: 0 0 50% 0;
+    font-size: 15px;
+}
+
+.overlay-top,
+.overlay-bot {
+    transition: top 0.4s ease-out, bottom 0.4s ease-out;
+}
+
+.grid-item h1,
+.grid-item h2,
+.grid-item p {
+    transition: padding 0.2s ease-out 0.4s;
+    font-weight: 300;
+}
+
+.grid-item:hover .overlay-top {
+    top: 0;
+    transition-delay: 0.2s;
+}
+
+.grid-item:hover .overlay-bot {
+    bottom: 0;
+    transition-delay: 0.2s;
+}
+
+.grid-item:hover h1,
+.grid-item:hover h2 {
+    padding: 10% 0;
+    margin: 0;
+}
+
+.grid-item:hover p {
+    padding: 10% 0;
+    margin: 0;
+}
+
+                                                        /*MODAL*/
+.modal{
+    color: black;
+    background-color: rgba(0, 0, 0, 0.69);
+}
+
+.modal-content{
+    background-color: rgb(198, 198, 198);
+}
+
+.modal-footer .btn{
+    margin: auto;
+    
+}
+
+.modal-desc{
+    padding: 2%;
+}
+
+#project-1, #project-2, #project-3{
+    overflow-y: hidden;
+}
+
+
+
+.modal-body {
+    max-height: calc(100vh - 155px);
+    overflow-y: auto;
+}
+/*^This code is to make it fit on all device widths. But it adds a scrollbar within the modal^*/
+
+                                                        /*CONTACT*/
+
+
+.contact-title {
+    padding-bottom: 20px; 
+    padding-left: 10px; 
+    padding-right: 10px; 
+}
+
+
+.contact-panel {
+    color: #ddd;
+    background-color: #282E34;
+    text-align: center;
+    padding: 30px 80px;
+    text-align: justify;
+}
+
+
+
+.grid-contact{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-column-gap: 30px;
+    justify-content: center;
+}
+
+ul{
+  list-style: none;
+  padding: 3%;
+}
+
+
+.wrapper-con{
+  box-shadow: 0 0 20px 0 rgba(80, 72, 116, 0.7);
+}
+
+.wrapper-con > {
+  padding: 1em;
+}
+
+.my-info{
+  background:rgba(36, 63, 137, 0.53);
+}
+
+.my-info h3, .my-info ul{
+  text-align: center;
+  margin: auto;
+}
+
+.contact{
+  background:rgba(64, 64, 144, 0.47);;
+}
+
+/* FORM STYLES */
+.contact form{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap:20px;
+}
+
+.contact form label{
+  display: block;
+}
+
+.contact form p{
+  margin:10px;
+}
+
+.contact form .full{
+  grid-column: 1 / 3;
+}
+
+.contact form button, .contact form input, .contact form textarea{
+  width: 100%;
+  padding: 1em;
+  border: 1px solid #c9e6ff;
+}
+
+.contact form button{
+  background:rgb(91,192,222);
+  border: 0;
+  text-transform: uppercase;
+}
+
+.contact form button:hover,.contact form button:focus{
+  background:#92bde7;
+  color:#fff;
+  outline: 0;
+  transition: background-color 2s ease-out;
+}
+
+.title-con{
+    text-align: center;
+    padding: 3%;
+}
+
+/* LARGE SCREENS */
+@media(min-width:700px){
+  .wrapper-con{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .wrapper-con > *{
+    padding: 2em;
+  }
+    
+    .title-con{
+        text-align: center
+    }
+}
+/*
+                                              ****UNCOMPLETE****  NINJA EASTEREGG UNCOMMENT FOR EFFECT 
+ ON CLICK I WANT THE TEXT TO FADE OUT AND A NINJA TO SLIDE FROM THE LEFT ALONG WITH THE TEXT AND CENTER HIMSELF. CLICKING AGAIN MAKES HIM DISSAPPEAR
+.woah {
+    opacity: 0 !important;
+    transition-duration: 0.5s !important;
+}
+
+
+.caption-abt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 20%);
+    color: #000000;
+    text-transform: uppercase;
+    font-size: 18px;
+    text-align: center;
+    opacity: 0;
+    transition: all .5s;
+    backface-visibility: hidden;
+}
+
+.cap-text-abt:hover .caption-abt {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+}
+
+.ninja {
+    height: 300px;
+    width: auto;
+}
+  
+*/
+
+/*
+    .cap-text-abt:hover .para {
+        transform:  scale(1);
+        filter: blur(10px) brightness(100%);
+        background-color: rgb(255, 255, 255);
+    } 
+*/
+
+
+
+/*
+Samples of slide OPACITY FOR PROJECTS and links
+https://codepen.io/MiXT4PE/pen/OEBRVx?editors=1100
+https://codepen.io/web-tiki/pen/HhCyd
+https://www.w3schools.com/howto/howto_css_image_overlay_slide.asp
+*/
+
+/*
+Sample for the MODAL view of projects
+https://responsivebp.com/v2/javascript/lightbox.html#examples
+https://www.solodev.com/blog/web-design/how-to-make-an-external-link-pop-up-modal.stml
+*/
+
+
+
+
+/*
+ Turn off parallax scrolling for tablets and phones 
+@media only screen and (max-device-width: 1024px) {
+    .parallax-bg-1,
+    .parallax-bg-2,
+    .parallax-bg-3 {
+        background-attachment: scroll;
+    }
+}*/
+
+
+.skill-title:hover {
+    animation: headShake 1s 1;
+}
+
+.wrapper > ul > li:hover {
+    animation: rubberBand 1s 1;
+}
+
+/* ALL CREDIT TO DANIEL EDEN https://github.com/daneden/animate.css*/
+@-webkit-keyframes rubberBand {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1);
+  }
+
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1);
+  }
+
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+    transform: scale3d(0.95, 1.05, 1);
+  }
+
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+    transform: scale3d(1.05, 0.95, 1);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes rubberBand {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1);
+  }
+
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1);
+  }
+
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+    transform: scale3d(0.95, 1.05, 1);
+  }
+
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+    transform: scale3d(1.05, 0.95, 1);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.rubberBand {
+  -webkit-animation-name: rubberBand;
+  animation-name: rubberBand;
+}
+
+
+/*
+@-webkit-keyframes tada {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  10%,
+  20% {
+    -webkit-transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+  }
+
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+  }
+
+  40%,
+  60%,
+  80% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes tada {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  10%,
+  20% {
+    -webkit-transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+  }
+
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+  }
+
+  40%,
+  60%,
+  80% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.tada {
+  -webkit-animation-name: tada;
+  animation-name: tada;
+}
+
+@-webkit-keyframes heartBeat {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  14% {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+  }
+
+  28% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  42% {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+  }
+
+  70% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes heartBeat {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  14% {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+  }
+
+  28% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  42% {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+  }
+
+  70% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+.heartBeat {
+  -webkit-animation-name: heartBeat;
+  animation-name: heartBeat;
+  -webkit-animation-duration: 1.3s;
+  animation-duration: 1.3s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+}
+
+
+@-webkit-keyframes headShake {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  6.5% {
+    -webkit-transform: translateX(-6px) rotateY(-9deg);
+    transform: translateX(-6px) rotateY(-9deg);
+  }
+
+  18.5% {
+    -webkit-transform: translateX(5px) rotateY(7deg);
+    transform: translateX(5px) rotateY(7deg);
+  }
+
+  31.5% {
+    -webkit-transform: translateX(-3px) rotateY(-5deg);
+    transform: translateX(-3px) rotateY(-5deg);
+  }
+
+  43.5% {
+    -webkit-transform: translateX(2px) rotateY(3deg);
+    transform: translateX(2px) rotateY(3deg);
+  }
+
+  50% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+*/
+
+@keyframes headShake {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  6.5% {
+    -webkit-transform: translateX(-6px) rotateY(-9deg);
+    transform: translateX(-6px) rotateY(-9deg);
+  }
+
+  18.5% {
+    -webkit-transform: translateX(5px) rotateY(7deg);
+    transform: translateX(5px) rotateY(7deg);
+  }
+
+  31.5% {
+    -webkit-transform: translateX(-3px) rotateY(-5deg);
+    transform: translateX(-3px) rotateY(-5deg);
+  }
+
+  43.5% {
+    -webkit-transform: translateX(2px) rotateY(3deg);
+    transform: translateX(2px) rotateY(3deg);
+  }
+
+  50% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+.headShake {
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-name: headShake;
+  animation-name: headShake;
+}
+
+
+
+
+
+

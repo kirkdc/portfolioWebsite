@@ -1,0 +1,22 @@
+{
+  "name": "v7_deploy",
+  "version": "1.0.0",
+  "description": "cv_site",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "author": "kirkdc",
+  "license": "ISC",
+  "dependencies": {
+    "aos": "^2.3.4",
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "nodemailer": "^5.1.0"
+  },
+  "devDependencies": {
+    "dotenv": "^6.2.0"
+  }
+}

@@ -14,9 +14,10 @@
     "body-parser": "^1.18.3",
     "ejs": "^2.6.1",
     "express": "^4.16.4",
-    "nodemailer": "^5.1.0"
+    "nodemailer": "^5.1.0",
+    "dotenv": "^6.2.0"
   },
   "devDependencies": {
-    "dotenv": "^6.2.0"
+    
   }
 }

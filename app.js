@@ -56,7 +56,7 @@ app.post("/send", function(req, res){
     // setup email data with unicode symbols
     let mailOptions = {
         from: '"Nodemailer Contact" <dcostacode@yahoo.com>', // sender address
-        to: 'dcostacode@gmail.com, process.env.MY_EMAIL', // list of receivers
+        to: 'dcostacode@gmail.com, kirk_dcosta@yahoo.com', // list of receivers
         subject: 'Node Contact Request', // Subject line
         text: 'Hello world?', // plain text body
         html: output

@@ -87,7 +87,7 @@ height: 60px;
 
 .color-change{
     background-color: #222 !important;
-    transition: all 0.25s ease-in;
+    transition: all .5s ease-in;
 }
 
 
@@ -777,7 +777,7 @@ https://kimmobrunfeldt.github.io/progressbar.js/*/
 
 .wrapper-proj > img {
     box-sizing: border-box;
-    padding: 4%;
+    padding: .25%;
     position: relative;
     width: 220px;
     height: 300px;
@@ -823,11 +823,15 @@ https://kimmobrunfeldt.github.io/progressbar.js/*/
 }
 
 .grid-item img {
-    width: 80%;
+    width: 80%; 
+/*    width: 84%;*/
     height: auto;
     display: block;
-    margin: 0 auto;
+    margin: 10px auto;
+    border: 5px solid black;
 }
+
+
 
 .overlay-top,
 .overlay-bot {
@@ -905,6 +909,10 @@ https://kimmobrunfeldt.github.io/progressbar.js/*/
 .modal-footer .btn{
     margin: auto;
     
+}
+
+.modal-footer {
+    justify-content: space-around;
 }
 
 .modal-desc{

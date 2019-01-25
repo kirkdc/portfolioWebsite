@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <!--    bootstrap cdn-->
-    
+
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--cdn for scroll animations https://michalsnik.github.io/aos/-->
     <link type="text/css" rel="stylesheet" href="stylesheets/home.css">
@@ -89,7 +89,7 @@
 
                 </div>
 
-                <div class="card-side card-back">
+                <div id="overlay-menu" class="card-side card-back">
 
                     <div class="card-ninja">
 
@@ -97,37 +97,36 @@
 
                 </div>
 
-
             </div>
 
+           
+           
+            <div class="overlay overlay-data">
+                    <button type="button" class="overlay-close">Close</button>
+                    <div class="outer">
+                        <div class="container-ninja">
+                            <div class="ninja">
+                                <a href="http://ninjaflex.com/" target="_blank">
+                                    <img src="https://i.ibb.co/JqwBCFy/Ninja-Outline-2.png" alt="ninja"/>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
             <div class="column about-txt cap-text-abt" data-aos="fade-up-left" data-aos-duration="1500">
                 <div class="para">
-                    <p>Hey, thanks for stopping by. My name’s Kirk. I've always enjoyed taking things apart and rebuilding them. I was the annoying kid who took his friends toys apart just to see how they worked. I also really wanted to be a Ninja Turtle when I grew up.</p>
+                    <p>Hey, thanks for stopping by. My name’s Kirk. I've always enjoyed taking things apart and rebuilding them. I was the annoying kid who took his friends toys apart just to see how they worked. I also really wanted to be a <span id="surprise">Ninja</span> Turtle when I grew up.</p>
                     <p>Unfortunately, life had other plans…</p>
                     <p>I majored in psychology, got into a gaming company, did some BTL advertising. Managed events in Dubai, kickstarted a tour agency in Goa and worked as an editor for a tech publisher.</p>
                     <p>My work as an editor introduced me to the world of web development. I’ve been playing with websites ever since. </p>
                     <p>And now, you’re reading this. Here’s what I can do…</p>
                 </div>
 
-                <!--
-                   UNCOMMENT FOR NINJA EFFECT
-                <figcaption class="caption-abt">
-                           <img class="ninja" src="http://pre13.deviantart.net/7d2f/th/pre/f/2011/183/2/1/web_design_ninjas_logo_by_zombie-d3ksmb5.png" /> <br>
-                            Web Ninja!
-                </figcaption>
--->
+                
 
             </div>
-
-            <!--
-            
-                    <div class="wrapper-html cap-text">
-                        <img src="" />
-                        <figcaption class="caption-skill">
-                            html
-                        </figcaption>
-                    </div>
--->
 
 
         </div>
@@ -225,12 +224,6 @@
                 <h4 class="skill-title"> CURRENTLY STUDYING </h4>
                 <div class="nested">
 
-                    <!--
-                    <div class="wrapper">
-
-                    </div>
-
--->
 
                     <div class="wrapper">
                         <ul>
@@ -271,7 +264,7 @@
 
             </div>
         </div>
-        
+
         <div class="quote">
             <p>
                 'Adapt what is useful, reject what is useless, and add what is specifically your own.' -Bruce Lee
@@ -292,12 +285,12 @@
         <h4 class="proj-title"> Here are some of my personal projects </h4>
         <div class="grid-proj">
 
-           
-<!--
+
+            <!--
 https://i.ibb.co/RDRLQd2/skysight-full.jpg
 https://i.ibb.co/N3SBTy0/Moviemania-full.jpg
 -->
-           
+
             <div class="wrapper-proj grid-item">
                 <img src="https://i.ibb.co/RDRLQd2/skysight-full.jpg" />
 
@@ -420,7 +413,7 @@ https://i.ibb.co/N3SBTy0/Moviemania-full.jpg
             <!--http://www.webtutorialplus.com/css-hover-effects/-->
 
         </div>
-        
+
         <h5 class="patience-proj"> All of these websites have been deployed on free servers so they may take time to load. Please be patient :) </h5>
         <p class="other-work"> You can check out the rest my work on <a href="#">CodePen</a> and <a href="#">Github</a> </p>
 
@@ -451,8 +444,8 @@ https://i.ibb.co/N3SBTy0/Moviemania-full.jpg
                         </div>
                         <div class="contact">
                             <h3 class="title-con">Get in touch </h3>
-<!--                          <percentage sign msg %> FIND OUT HOW TO PRINT CONFIRMATION MESSAGE BECAUSE THIS DOES NOT WORK-->
-                            
+                            <!--                          <percentage sign msg %> FIND OUT HOW TO PRINT CONFIRMATION MESSAGE BECAUSE THIS DOES NOT WORK-->
+
                             <form method="POST" action="send">
                                 <p>
                                     <label>Name</label>
@@ -486,7 +479,7 @@ https://i.ibb.co/N3SBTy0/Moviemania-full.jpg
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="progressbar.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!--^cdn for scroll animations https://michalsnik.github.io/aos/^-->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 

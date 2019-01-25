@@ -960,7 +960,7 @@ https://kimmobrunfeldt.github.io/progressbar.js/*/
 
 ul{
   list-style: none;
-  padding: 3%;
+ 
 }
 
 
@@ -1415,5 +1415,129 @@ https://www.solodev.com/blog/web-design/how-to-make-an-external-link-pop-up-moda
 
 
 
+                                                        /*NINJA SURPRISE*/
+
+
+
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+/*   background-image: url('https://j.gifs.com/YE6OJA.gif'); */
+/*   https://i.imgur.com/DThIBBW.gif */
+  background-image: url('https://i.ibb.co/vX3620x/Sunbrust-light-darker.jpg');
+    background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+    z-index: 100;
+
+  
+
+}
+.overlay .outer {
+  text-align: center;
+  position: relative;
+  top: 20%;
+  height: 60%;
+  font-size: 50px;
+}
+.overlay ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: inline-block;
+  height: 100%;
+  position: relative;
+}
+.overlay ul li {
+  display: inline-block;
+  height: 0%;
+}
+.overlay ul li a {
+  font-weight: 300;
+  text-decoration: none;
+  display: block;
+  color: #1d1f20;
+  margin-right: 40px;
+  list-style: none;
+}
+.overlay-close {
+	width: 80px;
+	height: 80px;
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	overflow: hidden;
+	border: none;
+	background: url('https://i.ibb.co/GTPM44h/cross.png') no-repeat center center;
+	text-indent: 200%;
+	color: transparent;
+	outline: none;
+	z-index: 100;
+}
+.overlay-data {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+  visibility: 0s 0.5s;
+  transition: opacity 1s, visibility 0s 0.5s;
+}
+.overlay-open {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 2s;
+}
+
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.8);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.4);
+		transform: translatey(-40px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.8);
+		transform: translatey(0px);
+	}
+}
+
+.container-ninja {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.ninja {
+  background-image: url('https://i.ibb.co/ftgVPPC/code-gif.gif');
+	width: 260px;
+	height: 260px;
+	box-sizing: border-box;
+
+	border-radius: 50%;
+	overflow: hidden;
+	box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+	transform: translatey(0px);
+	animation: float 7s ease-in-out infinite;
+}
+
+.ninja img {
+  width: 100%; 
+  height: auto;
+}
+
+#overlay-menu, #surprise {
+    cursor: pointer;
+    font-style: italic;
+}
 
 

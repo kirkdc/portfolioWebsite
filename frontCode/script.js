@@ -166,6 +166,24 @@ $(document).ready(function(){
 //});
 
 
+//=============================================
+//  NINJA SCRIPT
+//============================================= 
+
+  $("#overlay-menu, #surprise").click(function() {
+        $( ".overlay" ).addClass
+        ('overlay-open');
+      });
 
 
+    $( ".overlay-close" ).click(function() {
+      $( ".overlay" ).removeClass
+      ( 'overlay-open' ); 
+      });
 
+$(document).keydown(function(e) {
+    if (e.keyCode == 27) {
+        $( ".overlay" ).removeClass
+      ( 'overlay-open' ); 
+    }
+});

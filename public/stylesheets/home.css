@@ -9,6 +9,7 @@ html {
 }
 
 
+
                                                         /* SCROLL ARROW */  
 
 
@@ -81,9 +82,15 @@ height: 60px;
 
 /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
 .sticky + .about {
-  padding-top: 77px; 
+  padding-top: 69px; 
 }
 
+
+#smooth-scroll {
+  padding-top: 22px;
+    height:50px;
+    width: 50px;
+}
 
 .color-change{
     background-color: #222 !important;
@@ -170,7 +177,7 @@ height: 60px;
 }
 
 .parallax-bg-1 {
-    background-image: url("https://image.ibb.co/fMO2ML/work-station-straight-on-view-WEB.jpg");
+    background-image: url("https://i.ibb.co/4WLYsmV/work-station-straight-on-view-WEB-w-text.jpg");
     min-height: 100%;
 }
 
@@ -184,9 +191,11 @@ height: 60px;
 /*https://image.ibb.co/mFnn69/Code.jpg*/
 
 .parallax-bg-3 {
-    background-image: url("https://i.ibb.co/3YmvjP1/projects-web.jpg");
+    background-image: url("https://i.ibb.co/Sf9jVBZ/projects-web-light.jpg");
     min-height: 37%;
-/*         https://image.ibb.co/dTr080/Projects-WEB.jpg*/
+/*    https://image.ibb.co/dTr080/Projects-WEB.jpg*/
+/*    https://i.ibb.co/3YmvjP1/projects-web.jpg*/
+    
 }
 
 .parallax-bg-4 {
@@ -195,20 +204,74 @@ height: 60px;
 }
 /*https://image.ibb.co/dL0qR9/IOT.jpg*/
 
-                                                        /*NAME & TITLE*/
+
+
+
+                                                        /*BEGIN BUTTON*/
+
+
+.flex-grid-center {
+	display: inline-block;
+	justify-content: center;
+	margin: 5em 0;
+    text-decoration: none !important;
+    
+}
+
+
+.arcade-button {
+	color: rgba(255,255,255,1);
+	background: none;
+	border-radius: 30px;
+	padding: 1.2em 5em;
+	letter-spacing: 0.35em;
+	font-size: 0.7em;
+	transition: background-color 0.3s, box-shadow 0.3s, color 0.3s;
+	margin: 1em;
+  animation: blinking_border 1.2s infinite;
+
+}
+
+.blue {
+  	box-shadow: inset 0 0 1em rgba(0,170,170,0.5), 0 0 1em rgba(0,170,170,0.5);
+		border: #0dd solid 2px;
+}
+
+.blue:hover  {
+  		background-color:  rgb(0, 221, 221);
+		box-shadow: inset 0 0 0 rgba(0,170,170,0.5), 0 0 1.5em rgba(0,170,170,0.7);
+  
+  animation: none;
+  font-size: .72em;
+  
+}
+
+.blinking{
+	  animation:blinking_border 0.8s infinite;
+}
+@keyframes blinking_border{
+	0%{		color: white;	}
+/*	 49%{	color: transparent;	}*/
+	50%{	color: transparent;	}
+/*	 99%{	color:transparent;	}*/
+	100%{	color: white;	}
+}
+
+
+
+                                                        /*ARCADE BEGIN BUTTON*/
 
 .name-container {
     position: fixed;
-    left: 0;
-    top: 15%;
+    top: 23%;
     width: 90%;
     text-align: center;
     color: #000;
-    left: 3%;
+    left: 5%;
     /* to align it in the center*/
     padding: 18px;
-    font-size: 50px;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-size: 12px;
+/*    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;*/
     /* DELETE THIS AND USE SHADWO DROP FROM CAT APP */
 }
 
@@ -225,38 +288,14 @@ height: 60px;
     padding-left: 4%;
 }
 
-@media(max-width: 540px) {
-    
+@media(min-height: 1000px) {
     .name-container {
         position: fixed;
-        left: 0;
-        top: 15%;
-        width: 90%;
-        text-align: center;
-        color: #000;
-        left: 3%;
-        /* to align it in the center*/
-        padding: 1px;
-        font-size: 50px;
-        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-        /* DELETE THIS AND USE SHADWO DROP FROM CAT APP */
+        top: 30%;
     }
-
-    .name {
-        color: #ffffff;
-        letter-spacing: 15px;
-        padding-left: 1%;
-    }
-
-     #name > .title {
-        color: #ffffff;
-         font-size: 55%;
-        letter-spacing: 2px;
-        padding-left: 4%;
-    }
-
-
 }
+
+
 
 
 
@@ -349,13 +388,16 @@ h3 {
     color: #777;
     background-color: rgb(255, 255, 255);
     text-align: center;
-    padding: 30px 80px;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 10px;
     text-align: justify;
 }
 
 .about-caption {
     color: black;
     text-align: center;
+    padding-top: 21px
 }
 
 .grid-about {
@@ -743,6 +785,11 @@ https://kimmobrunfeldt.github.io/progressbar.js/*/
         transform:  scale(1);
         filter: blur(3px) brightness(20%);
     } 
+
+
+.knowledge {
+    padding-left: 0 !important;
+}
 
 
                                                         /*PROJ*/
@@ -1539,5 +1586,8 @@ https://www.solodev.com/blog/web-design/how-to-make-an-external-link-pop-up-moda
     cursor: pointer;
     font-style: italic;
 }
+
+
+
 
 

@@ -33,7 +33,7 @@ $(document).ready(function(){
   $('body').scrollspy({target: ".navbar", offset: 60});   
 
   // Add smooth scrolling on all links inside the navbar
-  $("#navbar1 a, .scroll-link").on('click', function(event) {
+  $("#navbar1 a, .scroll-link, .smooth-scroll").on('click', function(event) {
     // Make sure this.hash has a value before overriding default behavior
     if (this.hash !== "") {
       // Prevent default anchor click behavior
@@ -89,18 +89,22 @@ $(document).ready(function() {
 		if (windowpos <=980) {    //Trigger animation when user reaches 980 point while scrolling
 			circle1.animate(0), circle2.animate(0), circle3.animate(0);  //b.addClass("anim-html");
 		} else {
-			circle1.animate(0.6), circle2.animate(0.5), circle3.animate(0.3); //b.removeClass("anim-html");
+			circle1.animate(0.6), circle2.animate(0.45), circle3.animate(0.3); //b.removeClass("anim-html");
 		}
 	});
 });
 
+
+//$('.anim.html').hover(function() {
+//    circle1.animate(0.6);
+//});
 
 //=============================================
 //  NAME AND TITLE ON MONITOR ON SCROLL EVENT
 //============================================= 
 
 function iDisappear() {
-    if ( $( window ).scrollTop() > 400 ) {
+    if ( $( window ).scrollTop() > 375 ) {
         $("#name").addClass("disappear");
     }
     else {
@@ -120,11 +124,11 @@ $(document).ready(iDisappear);
 //============================================= 
 
 
-$(document).ready(function(){
-  $(".card-back").click(function(){
-    $(".para").toggleClass("woah .caption-abt");
-  });
-});
+//$(document).ready(function(){
+//  $(".card-back").click(function(){
+//    $(".para").toggleClass("woah .caption-abt");
+//  });
+//});
 
 //$(document).ready(function() {
 //	var n = $(".name-container");

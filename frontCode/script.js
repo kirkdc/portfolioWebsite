@@ -191,3 +191,29 @@ $(document).keydown(function(e) {
       ( 'overlay-open' ); 
     }
 });
+
+//=============================================
+//  BRUCE LEE SCRIPT
+//=============================================
+
+
+      $( "#overlay-menu-2" ).click(function() {
+        $( ".overlay-2" ).addClass
+        ('overlay-open-2');
+      });
+
+
+    $( ".overlay-close-2" ).click(function() {
+      $( ".overlay-2" ).removeClass
+      ( 'overlay-open-2' ); 
+      });
+
+$(document).keydown(function(e) {
+    if (e.keyCode == 27) {
+        $( ".overlay-2" ).removeClass
+      ( 'overlay-open-2' ); 
+    }
+});
+
+
+

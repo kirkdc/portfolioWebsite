@@ -792,6 +792,216 @@ https://kimmobrunfeldt.github.io/progressbar.js/*/
 }
 
 
+/*                                                            BRUCE LEE EASTER EGG*/
+
+.surprise{
+    cursor: pointer;
+    font-style: italic;
+}
+
+#container-2 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 50px;
+  width: 100px;
+}
+#overlay-menu-2 {
+  width: 100px;
+  height: 50px:
+}
+
+.overlay-2 {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+/*   background-image: url('https://j.gifs.com/YE6OJA.gif'); */
+/*   https://i.imgur.com/DThIBBW.gif */
+  background-image: url('https://i.ibb.co/JFjzQXq/Street-Fighter-China.jpg');
+    background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+    z-index: 100;
+
+
+/*
+https://i.ibb.co/VtYNkbG/suzaku-castle-july2017-2.jpg
+https://i.ibb.co/crXxKFb/stage-estate-at-noon.jpg
+https://i.ibb.co/JFjzQXq/Street-Fighter-China.jpg
+*/
+
+}
+.overlay-2 .outer {
+  text-align: center;
+  position: relative;
+  height: 100%;
+  
+}
+.overlay-2 ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: inline-block;
+  height: 100%;
+  position: relative;
+}
+.overlay-2 ul li {
+  display: inline-block;
+  height: 0%;
+}
+.overlay-2 ul li a {
+  font-weight: 300;
+  text-decoration: none;
+  display: block;
+  color: #1d1f20;
+  margin-right: 40px;
+  list-style: none;
+}
+.overlay-close-2 {
+	width: 80px;
+	height: 80px;
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	overflow: hidden;
+	border: none;
+	background: url('https://i.ibb.co/GTPM44h/cross.png') no-repeat center center;
+	text-indent: 200%;
+	background-color: black;
+	outline: none;
+	z-index: 100;
+    cursor: pointer;
+}
+.overlay-data-2 {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+  visibility: 0s 0.5s;
+  transition: opacity 1s, visibility 0s 0.5s;
+}
+.overlay-open-2 {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 2s;
+}
+
+.container-2 {
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+    flex-wrap: nowrap;
+	justify-content: space-between;
+/*	align-items: flex-start;*/
+	align-items: center;
+    
+    
+/*  border: 5px solid red;*/
+}
+
+
+.bruce {
+    
+  background-image: url('#');
+	box-sizing: border-box;
+	border-radius: 0%;
+	overflow: ;
+    width: 55%;
+    margin-right: 10%;
+/*  border: 5px solid white;*/
+}
+
+.bruce img {
+  width: 90%; 
+  height: 100%;
+}
+
+
+.spider {
+
+  background-image: url('#');
+	box-sizing: border-box;
+	border-radius: 0%;
+	overflow: hidden;
+    width: 100%;
+    margin-left: 10%;
+    margin-bottom: 10%;
+    
+/*    border: 5px solid blue;*/
+}
+
+.spider img {
+  width: 70%; 
+  height: 100%;
+}
+
+
+
+
+
+@media only screen and (max-width: 1150px) {
+    .spider {
+    margin-bottom: 25%;
+  
+}
+
+}
+
+@media only screen and (max-width: 900px) {
+    
+
+    .bruce img {
+  width: 125%; 
+  height: 100%;
+}
+
+
+.spider {
+    margin-bottom: 30%;
+  
+}
+    
+    .spider img {
+  width: 95%; 
+  height: 100%;
+}
+
+}
+
+
+
+@media only screen and (max-width: 500px) {
+    
+    .bruce {
+    margin-right: 0%;
+ 
+}
+
+    .bruce img {
+  width: 175%; 
+  height: 100%;
+}
+
+
+.spider {
+    margin-bottom: 62%;
+  
+}
+    
+    .spider img {
+  width: 126%; 
+  height: 100%;
+}
+
+}
+
+
                                                         /*PROJ*/
 
 

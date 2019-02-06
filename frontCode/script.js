@@ -192,6 +192,11 @@ $(document).keydown(function(e) {
     }
 });
 
+
+$("#overlay-menu, #surprise").click(function() {
+    navigator.vibrate([380, 150, 200]);  
+      });
+
 //=============================================
 //  BRUCE LEE SCRIPT
 //=============================================

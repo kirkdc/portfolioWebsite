@@ -194,7 +194,7 @@ $(document).keydown(function(e) {
 
 
 $("#overlay-menu, #surprise").click(function() {
-    navigator.vibrate([380, 150, 200]);  
+    navigator.vibrate([400, 300, 250]);  
       });
 
 //=============================================
@@ -220,5 +220,8 @@ $(document).keydown(function(e) {
     }
 });
 
+$("#overlay-menu-2").click(function() {
+    navigator.vibrate([400, 300, 250]);  
+      });
 
 

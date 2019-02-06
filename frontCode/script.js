@@ -194,7 +194,7 @@ $(document).keydown(function(e) {
 
 
 $("#overlay-menu, #surprise").click(function() {
-    navigator.vibrate([400, 800, 250]);  
+    navigator.vibrate([400, 1000, 250]);  
       });
 
 //=============================================

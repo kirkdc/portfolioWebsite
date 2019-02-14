@@ -31,7 +31,6 @@ app.post("/send", function(req, res){
 <ul> 
     <li>Name: ${req.body.name} </li>
     <li>email: ${req.body.email} </li>
-    <li>Subject: ${req.body.subject} </li>
 </ul>
 <h3> Message</h3>
 <p> ${req.body.message} </p>

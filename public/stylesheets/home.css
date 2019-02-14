@@ -1285,6 +1285,10 @@ ul{
     padding: 3%;
 }
 
+.info-list {
+    padding: 0;
+}
+
 /* LARGE SCREENS */
 @media(min-width:700px){
   .wrapper-con{

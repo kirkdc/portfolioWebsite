@@ -1363,19 +1363,6 @@ https://www.solodev.com/blog/web-design/how-to-make-an-external-link-pop-up-moda
 */
 
 
-
-
-/*
- Turn off parallax scrolling for tablets and phones 
-@media only screen and (max-device-width: 1024px) {
-    .parallax-bg-1,
-    .parallax-bg-2,
-    .parallax-bg-3 {
-        background-attachment: scroll;
-    }
-}*/
-
-
 .skill-title:hover {
     animation: headShake 1s 1;
 }
@@ -1693,10 +1680,8 @@ https://www.solodev.com/blog/web-design/how-to-make-an-external-link-pop-up-moda
   background-position: center;
   background-size: cover;
     z-index: 100;
-
-  
-
 }
+
 .overlay .outer {
   text-align: center;
   position: relative;
@@ -1802,6 +1787,31 @@ https://www.solodev.com/blog/web-design/how-to-make-an-external-link-pop-up-moda
 }
 
 
+/*PREVENTING THE EASTER EGGS FROM SHOWING BEFORE THE PAGE LOADS*/
+
+#overlay, #overlay-2{
+    display: none;
+}
 
 
+
+/*HANDLING THE SMALLL SCREEN BUGS*/
+@media only screen and (max-device-width: 1366px) {
+    .parallax-bg-1,
+    .parallax-bg-2,
+    .parallax-bg-3,
+    .parallax-bg-4{
+        background-attachment: scroll;
+    }
+    
+    .name-container {
+        position: absolute;
+        top: 26%;
+    }
+}
+
+.flash{
+    z-index: 100;
+    color: orangered;
+}
 

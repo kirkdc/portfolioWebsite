@@ -224,4 +224,19 @@ $("#overlay-menu-2").click(function() {
     navigator.vibrate([400, 700, 250]);  
       });
 
+//=============================================
+//  LOAD EASTER EGG AFTER PAGE LOAD
+//=============================================
+
+window.onload = function(){
+  window.setTimeout(function(){
+    document.getElementById("overlay").style.display = 'block';
+  }, 4000);
+    
+    window.setTimeout(function(){
+    document.getElementById("overlay-2").style.display = 'block';
+  }, 4000);
+    
+};
+
 

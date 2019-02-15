@@ -4,6 +4,10 @@ const express = require ("express");
 const bodyParser = require("body-parser");
 const nodemailer = require("nodemailer");
 
+const flash = require("connect-flash");
+const session = require('express-session');
+const cookieParser = require('cookie-parser');
+
 const app = express();
 
 app.set("view engine", "ejs");
@@ -12,7 +16,15 @@ app.set("view engine", "ejs");
 app.use(express.static("public"));
 app.use(express.static("frontCode"));
 
-
+//for the flash message on form submit
+app.use(cookieParser('secret'));
+app.use(session({
+    cookie: { maxAge: 60000 },
+    saveUninitialized: false,
+    resave: 'false',
+    secret: 'secret'
+}));
+app.use(flash());
 
 //bodyParser middleware
 app.use(bodyParser.urlencoded({extended: true}));
@@ -21,7 +33,7 @@ app.use(bodyParser.json());
 
 
 app.get("/", function(req, res){
-    res.render("home");
+    res.render("home", {success: req.flash("success"), error: req.flash("error")});
 });
 
 app.post("/send", function(req, res){
@@ -65,12 +77,14 @@ app.post("/send", function(req, res){
     // send mail with defined transport object
     transporter.sendMail(mailOptions, (error, info) => {
         if (error) {
+            req.flash("error", "error")
             return console.log(error);
         }
+        req.flash("success", "Thank you! Your message has been sent successfully.")
         console.log('Message sent: %s', info.messageId);
         console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info)); //DONT KNOW ABT THIS LINE OF CODE WASNT THERE IN THE EXAMPLE 
         
-        res.render('home'); //HAVE TO CHANGE THIS I DONT HAVE A CONTACT ROUTE. should ideally go back home with flash message
+        res.redirect('/#contact'); //HAVE TO CHANGE THIS I DONT HAVE A CONTACT ROUTE. should ideally go back home with flash message
     });
 });
 

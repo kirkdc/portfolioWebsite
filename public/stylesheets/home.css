@@ -1195,6 +1195,8 @@ https://i.ibb.co/JFjzQXq/Street-Fighter-China.jpg
     padding-bottom: 20px; 
     padding-left: 10px; 
     padding-right: 10px; 
+    text-align: center;
+
 }
 
 
@@ -1287,6 +1289,10 @@ ul{
 
 .info-list {
     padding: 0;
+}
+
+.easter-eggs {
+    text-decoration: none;
 }
 
 /* LARGE SCREENS */
@@ -1806,7 +1812,7 @@ https://www.solodev.com/blog/web-design/how-to-make-an-external-link-pop-up-moda
     
     .name-container {
         position: absolute;
-        top: 24%;
+        top: 23%;
     }
 }
 

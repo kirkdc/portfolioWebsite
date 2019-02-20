@@ -4,7 +4,6 @@ html {
     width:auto;
     margin: 0;
     font: 400 15px/1.8 "Lato", sans-serif;
-/*    background-color: rgb(72, 62, 62); remove to revert to old bg color along with .paralax-bg 1 2 3 4 opacity:    opacity: 0.59;*/
     background-color: #000000;
 }
 
@@ -318,33 +317,7 @@ height: 60px;
     }
 }
 
-/* TYPING ANIMATION  https://codepen.io/hi-im-si/pen/DHoup*/
 
-/*
-.appear {
-    animation: 
-        openspace 2s ease forwards, 
-        restored-item-animation 2s 2s cubic-bezier(0,.8,.32,1.07) forwards;
-}
-
-@keyframes openspace {
-    to {
-        height: auto;
-    }
-}
-
-@keyframes restored-item-animation {
-    from {
-        opacity: 0;
-        transform: scale(0);
-    }
-
-    to {
-        opacity: 1;
-        transform: scale(1);
-    }
-}
-*/
 
 
                                                         /*CAPTIONS*/
@@ -507,10 +480,13 @@ background-repeat: no-repeat;
     
 }
 
-
 .about-txt {
     grid-column: span 1;
     padding-top: 3%;
+    
+    padding-left: 5%;
+    Padding-right: 5%;
+    
 }
 
 }
@@ -829,11 +805,6 @@ https://kimmobrunfeldt.github.io/progressbar.js/*/
     z-index: 100;
 
 
-/*
-https://i.ibb.co/VtYNkbG/suzaku-castle-july2017-2.jpg
-https://i.ibb.co/crXxKFb/stage-estate-at-noon.jpg
-https://i.ibb.co/JFjzQXq/Street-Fighter-China.jpg
-*/
 
 }
 .overlay-2 .outer {
@@ -1052,6 +1023,18 @@ https://i.ibb.co/JFjzQXq/Street-Fighter-China.jpg
     padding-right: 30px;
 }
 
+@media(max-width:1240px) {
+
+.proj-title {
+    text-align: center;
+    padding-left: 0;
+    padding-bottom: 10px;;
+}
+    
+}
+
+
+
                                                         /*SLIDE ANIMATION FOR PROJECTS*/
 
 
@@ -1196,7 +1179,6 @@ https://i.ibb.co/JFjzQXq/Street-Fighter-China.jpg
     padding-left: 10px; 
     padding-right: 10px; 
     text-align: center;
-
 }
 
 
@@ -1243,6 +1225,23 @@ ul{
 .contact{
   background:rgba(64, 64, 144, 0.47);;
 }
+
+@media(max-width:1240px) {
+    .contact-title {
+    padding-left: 0; 
+    padding-right: 0; 
+    }
+    
+    
+.contact-panel {
+    padding: 30px 45px;
+
+}
+    
+}
+
+
+
 
 /* FORM STYLES */
 .contact form{
@@ -1291,6 +1290,9 @@ ul{
     padding: 0;
 }
 
+
+
+
 .easter-eggs {
     text-decoration: none;
     font-style: italic;
@@ -1311,63 +1313,8 @@ ul{
         text-align: center
     }
 }
-/*
-                                              ****UNCOMPLETE****  NINJA EASTEREGG UNCOMMENT FOR EFFECT 
- ON CLICK I WANT THE TEXT TO FADE OUT AND A NINJA TO SLIDE FROM THE LEFT ALONG WITH THE TEXT AND CENTER HIMSELF. CLICKING AGAIN MAKES HIM DISSAPPEAR
-.woah {
-    opacity: 0 !important;
-    transition-duration: 0.5s !important;
-}
 
 
-.caption-abt {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, 20%);
-    color: #000000;
-    text-transform: uppercase;
-    font-size: 18px;
-    text-align: center;
-    opacity: 0;
-    transition: all .5s;
-    backface-visibility: hidden;
-}
-
-.cap-text-abt:hover .caption-abt {
-    opacity: 1;
-    transform: translate(-50%, -50%);
-}
-
-.ninja {
-    height: 300px;
-    width: auto;
-}
-  
-*/
-
-/*
-    .cap-text-abt:hover .para {
-        transform:  scale(1);
-        filter: blur(10px) brightness(100%);
-        background-color: rgb(255, 255, 255);
-    } 
-*/
-
-
-
-/*
-Samples of slide OPACITY FOR PROJECTS and links
-https://codepen.io/MiXT4PE/pen/OEBRVx?editors=1100
-https://codepen.io/web-tiki/pen/HhCyd
-https://www.w3schools.com/howto/howto_css_image_overlay_slide.asp
-*/
-
-/*
-Sample for the MODAL view of projects
-https://responsivebp.com/v2/javascript/lightbox.html#examples
-https://www.solodev.com/blog/web-design/how-to-make-an-external-link-pop-up-modal.stml
-*/
 
 
 .skill-title:hover {
@@ -1459,174 +1406,6 @@ https://www.solodev.com/blog/web-design/how-to-make-an-external-link-pop-up-moda
 }
 
 
-/*
-@-webkit-keyframes tada {
-  from {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
-
-  10%,
-  20% {
-    -webkit-transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
-    transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
-  }
-
-  30%,
-  50%,
-  70%,
-  90% {
-    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
-    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
-  }
-
-  40%,
-  60%,
-  80% {
-    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
-    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
-  }
-
-  to {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
-}
-
-@keyframes tada {
-  from {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
-
-  10%,
-  20% {
-    -webkit-transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
-    transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
-  }
-
-  30%,
-  50%,
-  70%,
-  90% {
-    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
-    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
-  }
-
-  40%,
-  60%,
-  80% {
-    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
-    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
-  }
-
-  to {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
-}
-
-.tada {
-  -webkit-animation-name: tada;
-  animation-name: tada;
-}
-
-@-webkit-keyframes heartBeat {
-  0% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-
-  14% {
-    -webkit-transform: scale(1.3);
-    transform: scale(1.3);
-  }
-
-  28% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-
-  42% {
-    -webkit-transform: scale(1.3);
-    transform: scale(1.3);
-  }
-
-  70% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-}
-
-@keyframes heartBeat {
-  0% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-
-  14% {
-    -webkit-transform: scale(1.3);
-    transform: scale(1.3);
-  }
-
-  28% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-
-  42% {
-    -webkit-transform: scale(1.3);
-    transform: scale(1.3);
-  }
-
-  70% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-}
-
-.heartBeat {
-  -webkit-animation-name: heartBeat;
-  animation-name: heartBeat;
-  -webkit-animation-duration: 1.3s;
-  animation-duration: 1.3s;
-  -webkit-animation-timing-function: ease-in-out;
-  animation-timing-function: ease-in-out;
-}
-
-
-@-webkit-keyframes headShake {
-  0% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-  }
-
-  6.5% {
-    -webkit-transform: translateX(-6px) rotateY(-9deg);
-    transform: translateX(-6px) rotateY(-9deg);
-  }
-
-  18.5% {
-    -webkit-transform: translateX(5px) rotateY(7deg);
-    transform: translateX(5px) rotateY(7deg);
-  }
-
-  31.5% {
-    -webkit-transform: translateX(-3px) rotateY(-5deg);
-    transform: translateX(-3px) rotateY(-5deg);
-  }
-
-  43.5% {
-    -webkit-transform: translateX(2px) rotateY(3deg);
-    transform: translateX(2px) rotateY(3deg);
-  }
-
-  50% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-  }
-}
-*/
 
 @keyframes headShake {
   0% {

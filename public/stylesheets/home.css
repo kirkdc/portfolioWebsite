@@ -775,6 +775,11 @@ https://kimmobrunfeldt.github.io/progressbar.js/*/
     font-style: italic;
 }
 
+.surprise:hover{
+    text-decoration: underline;
+}
+
+
 #container-2 {
   position: absolute;
   top: 0;
@@ -1296,6 +1301,12 @@ ul{
 .easter-eggs {
     text-decoration: none;
     font-style: italic;
+    color: inherit;
+}
+
+.easter-eggs:hover {
+    color: inherit;  
+    color: inherit;  
 }
 
 /* LARGE SCREENS */
@@ -1570,6 +1581,10 @@ ul{
 #overlay-menu, #surprise {
     cursor: pointer;
     font-style: italic;
+}
+
+#surprise:hover {
+   text-decoration: underline;
 }
 
 
